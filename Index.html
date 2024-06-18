@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Solution {
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Taking input for principal, rate, and time
+        int principal = scanner.nextInt();
+        double rate = scanner.nextDouble();
+        int time = scanner.nextInt();
+
+        // Calculate simple interest
+        double simpleInterest = (principal * rate * time) / 100.0;
+
+        // Print the floor integer value of simple interest
+        System.out.println((int) Math.floor(simpleInterest));
+
+        // Closing the scanner
+        scanner.close();
+    }
+}
